@@ -37,8 +37,7 @@ const lyrics = [
 ];
 
 const fullMessage = `Hi Baby! <br><br>
-Happy 92 months sa atin! Grabe, 7 years and 8 months na tayo pero parang kailan lang nung nagsisimula pa lang tayo. 
-Salamat sa pagiging best partner, sa lahat ng tawa, at kahit sa mga asaran natin. <br><br>
+Happy 92 months sa atin!
 You are my greatest blessing, and I'm so lucky to have you as my "Baby". 
 I love you so much, more than words can say! Cheers to many more months and years together! 🥂❤️`;
 

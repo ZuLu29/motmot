@@ -193,9 +193,10 @@ body.wrong-answer {
 /* Photo Gallery Grid */
 .photo-gallery {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
     gap: 15px;
     margin: 30px 0;
+    justify-items: center;
 }
 
 .photo-card {
@@ -205,6 +206,8 @@ body.wrong-answer {
     box-shadow: 0 10px 20px rgba(0,0,0,0.1);
     transform-style: preserve-3d;
     perspective: 1000px;
+    width: 100%;
+    max-width: 140px;
 }
 
 .photo-card img {
@@ -307,8 +310,9 @@ body.wrong-answer {
     }
 
     .photo-gallery {
-        grid-template-columns: repeat(2, 1fr); /* 2 columns instead of 3 on mobile */
+        grid-template-columns: repeat(2, 1fr); 
         gap: 10px;
+        justify-content: center;
     }
 
     .photo-card {
