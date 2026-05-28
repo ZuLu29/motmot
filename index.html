@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy 92nd Monthsary, Baby!</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@300;400;600&family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+    <!-- Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.0/vanilla-tilt.min.js"></script>
+</head>
+<body id="body-theme">
+    <div class="bg-animation">
+        <ul class="circles">
+            <li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li>
+        </ul>
+    </div>
+
+    <!-- Lyrics Background Layer -->
+    <div id="lyrics-background" class="lyrics-container"></div>
+    <!-- Background Music -->
+    <audio id="bg-music" loop preload="auto">
+        <source src="music.mp3" type="audio/mpeg">
+    </audio>
+
+    <div class="container">
+        <!-- 1st Step: The Quiz -->
+        <div id="quiz-container" class="quiz-box">
+            <h2 class="quiz-title">Hi Baby! Quick question muna... ❤️</h2>
+            <p>Ilang months na tayo exactly today?</p>
+            <input type="number" id="quiz-answer" placeholder="Type the number here..." autofocus>
+            <button id="quiz-submit">Submit Answer</button>
+            <p id="quiz-error" class="error-msg hidden">Hala! Nakalimutan na niya? 🥺 Try again, Baby!</p>
+        </div>
+
+        <!-- 2nd Step: The floating heart (Initially Hidden) -->
+        <div id="envelope-wrapper" class="enavelope-wrapper hidden">
+            <div class="heart" id="main-heart"></div>
+            <p class="click-me">Hold or Click the heart, Baby! ❤️</p>
+        </div>
+
+        <!-- 3rd Step: The surprise content (Initially Hidden) -->
+        <div id="message-container" class="hidden">
+            <h1 class="title">Happy 92nd Monthsary!</h1>
+            <div class="stats">
+                <span>7 Years</span> • <span>8 Months</span> • <span>92 Months of Love</span>
+            </div>
+            
+            <!-- Photo Gallery -->
+            <div class="photo-gallery">
+                <div class="photo-card" style="--i:1">
+                    <img src="photo1.jpg" />
+                   
+                </div>
+                <div class="photo-card" style="--i:2">
+                    <img src="photo2.jpg" />
+                 
+                </div>
+                <div class="photo-card" style="--i:3">
+                    <img src="photo3.jpg" />
+                    
+                </div>
+            </div>
+
+            <div class="letter-box">
+                <p class="message">
+                    Hi Baby! <br><br>
+                    Happy 92 months sa atin! <br>
+                    You are my greatest blessing, and I'm so lucky to have you as my "Baby". 
+                    I love you so much, more than words can say! Cheers to many more months and years together! 🥂❤️
+                </p>
+            </div>
+            <div class="footer-msg">Forever & Always, Your Man</div>
+            
+            <button id="restart-btn" class="hidden">Watch Again? ✨</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
